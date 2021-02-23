@@ -20,8 +20,6 @@
 }
 
 #login {
-    background: #fff;
-    border-right: 1px solid #dcdcdc;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -32,8 +30,13 @@
     position: relative;
     width: 168px;
     z-index: 100;
-    color: #111;
     text-align: center;
+
+
+    background: #00ad45;
+    border-right: 1px solid #000;
+    color: #fff;
+
 }
 
 #register {
@@ -73,9 +76,9 @@
 #login_page {
     width: 538px;
     background: #fff;
-    padding: 2.8em 2em;
+    padding: 2em;
     display: block;
-    margin: auto;
+    margin: 0;
     position: relative;
     float: left;
     box-sizing: border-box;
