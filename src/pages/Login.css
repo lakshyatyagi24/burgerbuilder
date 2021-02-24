@@ -115,10 +115,10 @@
 #second {
     position: absolute;
     left: 0;
-    top: 0.8vh;
+    top: 0.1vh;
     padding: 0.5vh 0.6vw;
     color: #aaa;
-    width: 1.75vw;
+    width: 1.5vw;
 
 }
 
@@ -140,10 +140,10 @@
 #third {
     position: absolute;
     left: 0;
-    top: 0.8vh;
+    top: 0.1vh;
     padding: 0.5vh 0.6vw;
     color: #aaa;
-    width: 1.75vw;
+    width: 1.5vw;
 
 }
 
