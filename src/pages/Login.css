@@ -1,5 +1,5 @@
 #main {
-    width: 706px;
+    width: 54vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -25,10 +25,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
-    padding: 33px 20px;
+    font-size: 1.8vh;
+    padding: 3vh 1.48vw;
     position: relative;
-    width: 168px;
+    width: 12.3vw;
     z-index: 100;
     text-align: center;
 
@@ -47,10 +47,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
-    padding: 33px 20px;
+    font-size: 1.8vh;
+    padding: 3vh 1.48vw;
     position: relative;
-    width: 168px;
+    width: 12.3vw;
     z-index: 100;
     color: #111;
     text-align: center;
@@ -64,17 +64,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
-    padding: 33px 20px;
+    font-size: 1.8vh;
+    padding: 3vh 1.48vw;
     position: relative;
-    width: 168px;
+    width: 12.3vw;
     z-index: 100;
     color: #111;
     text-align: center;
 }
 
 #login_page {
-    width: 538px;
+    width: 39vw;
+    height: 32.8vh;
     background: #fff;
     padding: 2em;
     display: block;
@@ -86,7 +87,7 @@
 
 #loginHere { 
     color: #000;
-    font-size: 24px;
+    font-size: 2.4vh;
     text-align: center;
     margin-bottom: 1.2em;
     font-weight: 400;
@@ -94,7 +95,7 @@
 
 #userName {
     margin-bottom: 1em;
-    padding: 13px 0px 13px 40px;
+    padding: 1.3vh 0vw 1.3vh 3vw;
     border: 1px solid #eee;
     background: #eee;
     display: flex;
@@ -110,16 +111,16 @@
 #second {
     position: absolute;
     left: 0;
-    top: 8px;
-    padding: 1px 8px;
+    top: 0.8vh;
+    padding: 0.1vh 0.6vw;
     color: #aaa;
-    width: 25px;
+    width: 1.75vw;
 
 }
 
 #password {
     margin-bottom: 1em;
-    padding: 13px 0px 13px 40px;
+    padding: 1.3vh 0vw 1.3vh 3vw;
     border: 1px solid #eee;
     background: #eee;
     display: flex;
@@ -135,10 +136,10 @@
 #third {
     position: absolute;
     left: 0;
-    top: 8px;
-    padding: 1px 8px;
+    top: 0.8vh;
+    padding: 0.1vh 0.6vw;
     color: #aaa;
-    width: 25px;
+    width: 1.75vw;
 
 }
 
@@ -160,13 +161,13 @@
 }
 
 #fourth {
-    width: 30px;
+    width: 2vw;
 }
 
 #fifth {
-    width: 30px;
+    width: 2vw;
 }
 
 #sixth {
-    width: 30px;
+    width: 2vw;
 }
