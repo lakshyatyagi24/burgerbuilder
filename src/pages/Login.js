@@ -7,17 +7,19 @@ import forgetI from "../img/6.svg";
 
 class Login extends Component {
 
+
+
   checkLogin(e) {
     e.preventDefault();
     var usrname = e.target.elements.userName.value;
     var pswd = e.target.elements.password.value;
-    if(usrname == 'admin' && pswd == 'admin') {
+    if (usrname == 'admin' && pswd == 'admin') {
       alert("Login Successful")
     }
-    else if(usrname != 'admin' && pswd == 'admin') {
+    else if (usrname != 'admin' && pswd == 'admin') {
       alert("User not exist")
     }
-    else if(usrname == 'admin' && pswd != 'admin') {
+    else if (usrname == 'admin' && pswd != 'admin') {
       alert("Password not matched")
     }
     else {
@@ -32,16 +34,16 @@ class Login extends Component {
         <div id="left">
           <div id="login">
             <img src={loginI} alt="login" id="fourth" />
-                    Login
-          </div>
+                      Login
+            </div>
           <div id="register">
             <img src={registerI} alt="register" id="fifth" />
-                    Register
-          </div>
+                      Register
+            </div>
           <div id="forget">
             <img src={forgetI} alt="forget" id="sixth" />
-                    Forget
-          </div>
+                      Forget
+            </div>
         </div>
         <form method="post" onSubmit={this.checkLogin.bind(this)} id="login_page">
           <h3 id="loginHere">Login Here</h3>
