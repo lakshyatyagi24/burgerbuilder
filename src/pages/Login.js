@@ -1,4 +1,6 @@
 import React, { Component } from "react"; import "./Login.css";
+// eslint-disable-next-line
+import OrderBurger from "./OrderBurger";
 import user from "../img/2.svg";
 import pass from "../img/3.svg";
 import loginI from "../img/4.svg";
@@ -7,28 +9,42 @@ import forgetI from "../img/6.svg";
 
 class Login extends Component {
 
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      loginSuccessful: false
+    };
+  }
 
   checkLogin(e) {
     e.preventDefault();
     var usrname = e.target.elements.userName.value;
     var pswd = e.target.elements.password.value;
+    // eslint-disable-next-line
     if (usrname == 'admin' && pswd == 'admin') {
-      alert("Login Successful")
+      this.setState({loginSuccessful: true});
     }
+    // eslint-disable-next-line
     else if (usrname != 'admin' && pswd == 'admin') {
       alert("User not exist")
     }
+    // eslint-disable-next-line
     else if (usrname == 'admin' && pswd != 'admin') {
       alert("Password not matched")
     }
     else {
       alert("Wrong Credentials")
     }
-
   }
 
+
+
   render() {
+    const loginSuccessful = this.state.loginSuccessful;
+    let isLoginSuccessful=null;
+    if(loginSuccessful) {
+      isLoginSuccessful = <OrderBurger />
+    }
     return (
       <div id="main">
         <div id="left">
@@ -48,15 +64,16 @@ class Login extends Component {
         <form method="post" onSubmit={this.checkLogin.bind(this)} id="login_page">
           <h3 id="loginHere">Login Here</h3>
           <div id="imgUser">
-            <input type="userName" name="userName" placeholder="User Name" id="userName" required />
+            <input type="userName" name="userName" placeholder="User Name" id="userName" required  />
             <img src={user} alt="user" id="second" />
           </div>
           <div id="imgPassword">
-            <input type="password" name="password" placeholder="Password" id="password" required />
+            <input type="password" name="password" placeholder="Password"  id="password" required />
             <img src={pass} alt="password" id="third" />
           </div>
           <button onSubmit={this.LoginCheck} id="submit">Log In</button>
         </form>
+        {isLoginSuccessful}
       </div>
     )
   }
