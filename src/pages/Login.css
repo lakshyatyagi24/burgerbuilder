@@ -8,9 +8,10 @@
 #left {
     color: #333;
     display: block;
-    margin: auto;
+    margin: 0;
     position: relative;
     float: left;
+    height: 32.8vh;
 }
 
 #login:checked+label {
@@ -31,6 +32,7 @@
     width: 12.3vw;
     z-index: 100;
     text-align: center;
+    height: 5vh;
 
 
     background: #00ad45;
@@ -43,6 +45,7 @@
     background: #fff;
     border-right: 1px solid #dcdcdc;
     cursor: pointer;
+    height: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +60,7 @@
 }
 
 #forget {
+    height: 5vh;
     background: #fff;
     border-right: 1px solid #dcdcdc;
     cursor: pointer;
@@ -75,9 +79,9 @@
 
 #login_page {
     width: 39vw;
-    height: 32.8vh;
+    height: 33vh;
     background: #fff;
-    padding: 2em;
+    padding: 2.8vh 2vw;
     display: block;
     margin: 0;
     position: relative;
@@ -89,12 +93,12 @@
     color: #000;
     font-size: 2.4vh;
     text-align: center;
-    margin-bottom: 1.2em;
+    margin-bottom: 2.8vh;
     font-weight: 400;
 }
 
 #userName {
-    margin-bottom: 1em;
+    margin-bottom: 1.4vh;
     padding: 1.3vh 0vw 1.3vh 3vw;
     border: 1px solid #eee;
     background: #eee;
@@ -112,14 +116,14 @@
     position: absolute;
     left: 0;
     top: 0.8vh;
-    padding: 0.1vh 0.6vw;
+    padding: 0.5vh 0.6vw;
     color: #aaa;
     width: 1.75vw;
 
 }
 
 #password {
-    margin-bottom: 1em;
+    margin-bottom: 1.4vh;
     padding: 1.3vh 0vw 1.3vh 3vw;
     border: 1px solid #eee;
     background: #eee;
@@ -137,7 +141,7 @@
     position: absolute;
     left: 0;
     top: 0.8vh;
-    padding: 0.1vh 0.6vw;
+    padding: 0.5vh 0.6vw;
     color: #aaa;
     width: 1.75vw;
 
@@ -145,7 +149,7 @@
 
 
 #submit {
-    margin: 2.3em auto 0;
+    margin: 2.6vh 0 0 0;
     background: #00ad45;
     border: none;
     cursor: pointer;
@@ -153,10 +157,10 @@
     transition: 0.5s all;
     display: block;
     color: #fff;
-    padding: 14px 30px;
+    padding: 1.4vh 2.4vw;
     border-radius: 0;
-    font-size: 15px;
-    letter-spacing: 2px;
+    font-size: 1.5vh;
+    letter-spacing: 0.1vw;
     width: 100%;
 }
 
