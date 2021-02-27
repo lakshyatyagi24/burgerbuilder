@@ -5,6 +5,7 @@ class OrderBurger extends Component {
         return (
             <div style={{backgroundColor: "white", position: "relative"}}>
                 <h1 style={{color: "red"}}>Welcome</h1>
+                {console.log("hello")}
             </div>
         )
     }

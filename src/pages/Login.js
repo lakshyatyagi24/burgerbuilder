@@ -1,4 +1,5 @@
 import React, { Component } from "react"; import "./Login.css";
+import { BrowserRouter, Redirect, Route, Router, Switch } from "react-router-dom";
 // eslint-disable-next-line
 import OrderBurger from "./OrderBurger";
 import user from "../img/2.svg";
@@ -37,13 +38,12 @@ class Login extends Component {
     }
   }
 
-
-
   render() {
     const loginSuccessful = this.state.loginSuccessful;
     let isLoginSuccessful=null;
     if(loginSuccessful) {
-      isLoginSuccessful = <OrderBurger />
+      isLoginSuccessful = true;
+      return <BrowserRouter><Redirect to="/order" /><OrderBurger /></BrowserRouter>;
     }
     return (
       <div id="main">
@@ -73,7 +73,25 @@ class Login extends Component {
           </div>
           <button onSubmit={this.LoginCheck} id="submit">Log In</button>
         </form>
-        {isLoginSuccessful}
+
+      {/* <div>
+        {
+          isLoginSuccessful &&
+          
+          <BrowserRouter>
+          <Switch>
+            <Redirect to="/order/" />
+              <Route path="/order">
+                <OrderBurger />
+              </Route>
+              {/* <OrderBurger /> 
+              
+              </Switch>
+          </BrowserRouter>
+          
+}
+      </div> */}
+
       </div>
     )
   }
