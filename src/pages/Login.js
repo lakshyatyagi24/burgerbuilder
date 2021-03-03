@@ -8,6 +8,7 @@ import pass from "../img/3.svg";
 import loginI from "../img/4.svg";
 import registerI from "../img/5.svg";
 import forgetI from "../img/6.svg";
+import BurgerBuilder from "./BurgerBuilder";
 
 class Login extends Component {
 
@@ -42,7 +43,7 @@ class Login extends Component {
   render() {
     const loginSuccessful = this.state.loginSuccessful;
     if(loginSuccessful) {
-      return <BrowserRouter><Redirect to="/order" /><layout /></BrowserRouter>;
+      return <BrowserRouter><Redirect to="/order" /><layout><BurgerBuilder /></layout></BrowserRouter>;
     }
     return (
       <div>
