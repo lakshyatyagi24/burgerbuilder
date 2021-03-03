@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Login.css";
 import { BrowserRouter, Redirect } from "react-router-dom";
 // eslint-disable-next-line
-import OrderBurger from "./OrderBurger";
+import layout from "./Layout";
 import user from "../img/2.svg";
 import pass from "../img/3.svg";
 import loginI from "../img/4.svg";
@@ -42,7 +42,7 @@ class Login extends Component {
   render() {
     const loginSuccessful = this.state.loginSuccessful;
     if(loginSuccessful) {
-      return <BrowserRouter><Redirect to="/order" /><OrderBurger /></BrowserRouter>;
+      return <BrowserRouter><Redirect to="/order" /><layout /></BrowserRouter>;
     }
     return (
       <div>
