@@ -175,3 +175,10 @@
 #sixth {
     width: 2vw;
 }
+
+#heading {
+    color: brown;
+    font-size: 3.5vh;
+    font-weight: bolder;
+    position: relative;
+}

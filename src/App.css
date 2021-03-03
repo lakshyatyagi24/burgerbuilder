@@ -12,17 +12,12 @@
 }
 
 #bgImg {
+  margin: 0;
   width: 100vw;
   height: 100vh;
   background-size: cover;
   filter: blur(8px);
   -webkit-filter: blur(8px);
   position: absolute;
-}
+}  
 
-#heading {
-  color: brown;
-  font-size: 3.5vh;
-  font-weight: bolder;
-  position: relative;
-}

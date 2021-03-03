@@ -1,5 +1,6 @@
-import React, { Component } from "react"; import "./Login.css";
-import { BrowserRouter, Redirect, Route, Router, Switch } from "react-router-dom";
+import React, { Component } from "react"; 
+import "./Login.css";
+import { BrowserRouter, Redirect } from "react-router-dom";
 // eslint-disable-next-line
 import OrderBurger from "./OrderBurger";
 import user from "../img/2.svg";
@@ -40,58 +41,43 @@ class Login extends Component {
 
   render() {
     const loginSuccessful = this.state.loginSuccessful;
-    let isLoginSuccessful=null;
     if(loginSuccessful) {
-      isLoginSuccessful = true;
       return <BrowserRouter><Redirect to="/order" /><OrderBurger /></BrowserRouter>;
     }
     return (
-      <div id="main">
-        <div id="left">
-          <div id="login">
-            <img src={loginI} alt="login" id="fourth" />
-                      Login
-            </div>
-          <div id="register">
-            <img src={registerI} alt="register" id="fifth" />
-                      Register
-            </div>
-          <div id="forget">
-            <img src={forgetI} alt="forget" id="sixth" />
-                      Forget
-            </div>
+      <div>
+
+        <div id="heading">
+          <h1>Burger Builder Login</h1>
         </div>
-        <form method="post" onSubmit={this.checkLogin.bind(this)} id="login_page">
-          <h3 id="loginHere">Login Here</h3>
-          <div id="imgUser">
-            <input type="userName" name="userName" placeholder="User Name" id="userName" required  />
-            <img src={user} alt="user" id="second" />
+        <div id="main">
+          <div id="left">
+            <div id="login">
+              <img src={loginI} alt="login" id="fourth" />
+                        Login
+              </div>
+            <div id="register">
+              <img src={registerI} alt="register" id="fifth" />
+                        Register
+              </div>
+            <div id="forget">
+              <img src={forgetI} alt="forget" id="sixth" />
+                        Forget
+              </div>
           </div>
-          <div id="imgPassword">
-            <input type="password" name="password" placeholder="Password"  id="password" required />
-            <img src={pass} alt="password" id="third" />
-          </div>
-          <button onSubmit={this.LoginCheck} id="submit">Log In</button>
-        </form>
-
-      {/* <div>
-        {
-          isLoginSuccessful &&
-          
-          <BrowserRouter>
-          <Switch>
-            <Redirect to="/order/" />
-              <Route path="/order">
-                <OrderBurger />
-              </Route>
-              {/* <OrderBurger /> 
-              
-              </Switch>
-          </BrowserRouter>
-          
-}
-      </div> */}
-
+          <form method="post" onSubmit={this.checkLogin.bind(this)} id="login_page">
+            <h3 id="loginHere">Login Here</h3>
+            <div id="imgUser">
+              <input type="userName" name="userName" placeholder="User Name" id="userName" required  />
+              <img src={user} alt="user" id="second" />
+            </div>
+            <div id="imgPassword">
+              <input type="password" name="password" placeholder="Password"  id="password" required />
+              <img src={pass} alt="password" id="third" />
+            </div>
+            <button onSubmit={this.LoginCheck} id="submit">Log In</button>
+          </form>
+        </div>
       </div>
     )
   }
