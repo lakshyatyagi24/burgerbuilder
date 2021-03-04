@@ -1,13 +1,14 @@
 import { Component } from "react";
 import Aux from "./Aux";
-import layout from "./Layout";
+import Burger from "./Burger/Burger";
 
 class BurgerBuilder extends Component {
     render () {
         return(
-            <div>
-                <layout />
-            </div>
+            <Aux>
+                <Burger />
+                <div>Build Controls</div>
+            </Aux>
         );
     }
 }
